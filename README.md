@@ -42,7 +42,7 @@ havanna-gestion-franquicias/
 
 ## Backlog ágil
 
-Tablero en GitHub Projects: https://github.com/users/TU-USUARIO/projects/1
+Tablero en GitHub Projects: https://github.com/users/ciro-rdz/projects/1
 
 | ID | Historia de usuario | Prioridad | Estado |
 |---|---|---|---|
@@ -56,7 +56,7 @@ El detalle y los criterios de aceptación están en [docs/03_historias_de_usuari
 
 - **Ramas:** `main` contiene la versión revisada. Cada cambio se desarrolla en una rama secundaria (`docs/<tema>`) y se integra mediante Pull Request.
 - **Commits:** mensajes descriptivos con el formato `tipo: descripción en infinitivo`, por ejemplo `docs: agregar diccionario de datos con cuatro entidades`.
-- **Pull Requests:** todo cambio hacia `main` requiere la revisión de otra persona antes de fusionarse. El Pull Request de referencia es https://github.com/TU-USUARIO/havanna-gestion-franquicias/pull/1.
+- **Pull Requests:** todo cambio hacia `main` requiere la revisión de otra persona antes de fusionarse. El Pull Request de referencia es https://github.com/ciro-rdz/havanna-gestion-franquicias/pull/1.
 
 ## Indicadores de control
 
@@ -76,19 +76,20 @@ La fórmula, la fuente y la frecuencia de cada indicador están en [docs/04_indi
 
 ## Declaración de Uso de IA
 
-Se utilizó el asistente de IA generativa **Claude (Anthropic)** para estructurar el trabajo, proponer diseños y corregir el estilo. Se detallan los prompts, su justificación y las correcciones humanas realizadas.
+Se utilizó el asistente de IA generativa **Claude (Anthropic)** para estructurar el trabajo, proponer diseños y corregir el estilo. Se detallan los prompts, su justificación y la revisión humana realizada.
 
 | Prompt (resumen) | Por qué lo utilicé | Resultado | Corrección humana |
 |---|---|---|---|
-| Cargué la consigna de la Entrega 3 y mis Entregas 1 y 2, y pedí armar la entrega. | Dar contexto del mismo caso (Havanna S.A.) para mantener coherencia entre entregas y ahorrar tiempo de maquetación. | Borrador del organigrama del área de Sistemas, del diccionario de datos (4 entidades) y del documento en PDF. | [COMPLETAR: qué revisaste o cambiaste, por ejemplo entidades, campos, tipos de dato o redacción.] |
-| Pegué la lista de verificación de la cátedra y pregunté si la entrega cumplía. | Contrastar lo producido con los requisitos oficiales y no depender solo de mi lectura. | Señaló que el organigrama modelaba el área de Sistemas y no toda la empresa, y que faltaba la plantilla de la cátedra. | [COMPLETAR: qué decidiste sobre el alcance del organigrama y la plantilla.] |
-| Cargué la consigna de la Entrega 4 y pedí armarla, indicando que trabajo solo y que uso GitHub y GitHub Desktop. | Obtener una propuesta de BPMN, historias de usuario, indicadores y archivos del repositorio, coherente con las Entregas 1 a 3. | Propuesta de proceso BPMN, tres historias de usuario, nueve indicadores, README y guía de trabajo con Git. | [COMPLETAR: qué historias, indicadores y valores aceptaste, modificaste o descartaste, y por qué.] |
+| Cargué la consigna de la Entrega 3 y mis Entregas 1 y 2, y pedí armar la entrega. | Dar contexto del mismo caso (Havanna S.A.) para mantener coherencia entre entregas y ahorrar tiempo de maquetación. | Borrador del organigrama del área de Sistemas, del diccionario de datos (4 entidades) y del documento en PDF. | Revisé el borrador completo y lo acepté sin modificaciones. |
+| Pegué la lista de verificación de la cátedra y pregunté si la entrega cumplía. | Contrastar lo producido con los requisitos oficiales y no depender solo de mi lectura. | Señaló que el organigrama modelaba el área de Sistemas y no toda la empresa, y que faltaba la plantilla de la cátedra. | Revisé la observación y mantuve el organigrama del área de Sistemas, que la consigna admite como alternativa. |
+| Cargué la consigna de la Entrega 4 y pedí armarla, indicando que trabajo solo y que uso GitHub y GitHub Desktop. | Obtener una propuesta de BPMN, historias de usuario, indicadores y archivos del repositorio, coherente con las Entregas 1 a 3. | Propuesta de proceso BPMN, tres historias de usuario, nueve indicadores, README y guía de trabajo con Git. | Revisé todo el material y lo acepté sin modificaciones. Los commits, los Pull Requests, los issues y el tablero los realicé yo en GitHub, siguiendo la guía. |
 
 **Limitaciones identificadas y controles aplicados:**
 
-- Los asistentes de IA tienden a proponer estructuras y redacciones genéricas, por lo que cada decisión se contrastó con el caso de Havanna S.A. y con las entregas previas.
+- Los asistentes de IA tienden a proponer estructuras y redacciones genéricas, por lo que cada resultado se contrastó con el caso de Havanna S.A. y con las entregas previas.
 - Los estándares de los indicadores K5 y K6 (98 % y 99,5 %) son valores propuestos sin base empírica de la organización y deben validarse con ella.
 - Los tipos de dato del diccionario son genéricos y deben ajustarse al motor de base de datos que se elija.
+- Incoherencia detectada al revisar: el diccionario inicial (Entrega N.° 3) no incluye entidades para las alertas de reposición ni para los pedidos, aunque la historia HU-02 y el proceso BPMN las requieren. Se incorporarán entidades como ALERTA_REPOSICION y PEDIDO en la etapa de diseño detallado.
 - La IA no puede comprobar qué historial de commits, revisiones o estados del tablero existen realmente en GitHub, por lo que esa evidencia fue generada y verificada por el autor.
 
 El autor asume la responsabilidad intelectual sobre la veracidad y coherencia de lo presentado.

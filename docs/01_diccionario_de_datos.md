@@ -31,6 +31,8 @@ Artículo comercializable, identificado por su SKU.
 ## STOCK
 Inventario vigente de un producto en un punto de venta. Existe un único registro por cada combinación (id_punto_venta, id_producto).
 
+**Restricción de unicidad:** `UNIQUE (id_punto_venta, id_producto)`, para evitar registros de stock duplicados.
+
 | Campo | Tipo de dato | Descripción funcional |
 |---|---|---|
 | id_stock (PK) | Integer | Identificador único del registro de inventario. |

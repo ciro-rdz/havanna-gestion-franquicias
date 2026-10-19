@@ -90,6 +90,7 @@ Se utilizó el asistente de IA generativa **Claude (Anthropic)** para estructura
 - Los estándares de los indicadores K5 y K6 (98 % y 99,5 %) son valores propuestos sin base empírica de la organización y deben validarse con ella.
 - Los tipos de dato del diccionario son genéricos y deben ajustarse al motor de base de datos que se elija.
 - Incoherencia detectada al revisar: el diccionario inicial (Entrega N.° 3) no incluye entidades para las alertas de reposición ni para los pedidos, aunque la historia HU-02 y el proceso BPMN las requieren. Se incorporarán entidades como ALERTA_REPOSICION y PEDIDO en la etapa de diseño detallado.
+- Corrección surgida de la revisión de pares: el revisor LeoCba07 señaló en el Pull Request #1 que la unicidad de la combinación (id_punto_venta, id_producto) en STOCK debía explicitarse con una restricción UNIQUE; el autor la incorporó al diccionario.
 - La IA no puede comprobar qué historial de commits, revisiones o estados del tablero existen realmente en GitHub, por lo que esa evidencia fue generada y verificada por el autor.
 
 El autor asume la responsabilidad intelectual sobre la veracidad y coherencia de lo presentado.

@@ -42,7 +42,7 @@ havanna-gestion-franquicias/
 
 ## Backlog ágil
 
-Tablero en GitHub Projects: https://github.com/users/TU-USUARIO/projects/1
+Tablero en GitHub Projects: https://github.com/users/ciro-rdz/projects/1
 
 | ID | Historia de usuario | Prioridad | Estado |
 |---|---|---|---|
@@ -56,7 +56,7 @@ El detalle y los criterios de aceptación están en [docs/03_historias_de_usuari
 
 - **Ramas:** `main` contiene la versión revisada. Cada cambio se desarrolla en una rama secundaria (`docs/<tema>`) y se integra mediante Pull Request.
 - **Commits:** mensajes descriptivos con el formato `tipo: descripción en infinitivo`, por ejemplo `docs: agregar diccionario de datos con cuatro entidades`.
-- **Pull Requests:** todo cambio hacia `main` requiere la revisión de otra persona antes de fusionarse. El Pull Request de referencia es https://github.com/TU-USUARIO/havanna-gestion-franquicias/pull/1.
+- **Pull Requests:** todo cambio hacia `main` requiere la revisión de otra persona antes de fusionarse. El Pull Request de referencia es https://github.com/ciro-rdz/havanna-gestion-franquicias/pull/1.
 
 ## Indicadores de control
 
